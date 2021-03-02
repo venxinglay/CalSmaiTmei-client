@@ -1,0 +1,167 @@
+body {
+    font-family: sans-serif;
+    position: relative;
+    background: #f0f5f9;
+}
+
+#scientific-calculator .result {
+    padding: 0.5rem 0.7rem 0.1rem 0.5rem;
+    overflow: auto;
+}
+
+#scientific-calculator .resultContainer {
+    border: thin solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    background-color: #c9d6df;
+    text-align: right;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 300;
+    color: #52616b;
+}
+
+#scientific-calculator .operator:hover {
+    filter: grayscale(100%);
+    color: #f0f5f9;
+}
+
+#scientific-calculator .result p {
+    font-size: 64px;
+    margin: 5px;
+}
+
+#scientific-calculator button:hover {
+    outline: none;
+    background-color: #f0f5f9 !important;
+    color: #52616b;
+}
+
+#scientific-calculator button:focus {
+    outline: none;
+}
+
+#scientific-calculator .calculator-body {
+    border: thin solid black;
+    border-right: none;
+    max-width: 876px;
+    margin: auto;
+    margin-top: 130px;
+    background-color: #c9d6df;
+    box-shadow: 0 0 10px 10px #c4c4c4;
+}
+
+#scientific-calculator .button {
+    display: block;
+    background-color: #c9d6df;
+}
+
+#scientific-calculator .memory {
+    color: white;
+    height: 65px !important;
+    font-size: 23px !important;
+}
+
+#scientific-calculator button {
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    color: white;
+    width: 87.5px;
+    height: 65px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#scientific-calculator .clear:hover {
+    background-color: #bb4444 !important;
+}
+
+#scientific-calculator .zero {
+    border: 1;
+    width: 20%;
+}
+
+#scientific-calculator .test {
+    text-align: center;
+}
+
+@media only screen and (max-width: 935px) {
+    #scientific-calculator .calculator-body {
+        max-width: 776px;
+    }
+
+    #scientific-calculator button {
+        width: 77.5px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    #scientific-calculator .calculator-body {
+        max-width: 676px;
+    }
+
+    #scientific-calculator button {
+        width: 67.5px;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    #scientific-calculator .calculator-body {
+        max-width: 576px;
+    }
+
+    #scientific-calculator button {
+        width: 57.5px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    #scientific-calculator .calculator-body {
+        max-width: 476px;
+    }
+
+    #scientific-calculator button {
+        width: 47.5px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    #scientific-calculator .calculator-body {
+        max-width: 376px;
+    }
+
+    #scientific-calculator button {
+        width: 37.5px;
+        font-size: 14px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    #scientific-calculator .calculator-body {
+        max-width: 300px;
+    }
+
+    #scientific-calculator button {
+        width: 29.8px;
+        font-size: 12px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #scientific-calculator .calculator-body {
+        max-width: 276px;
+    }
+
+    #scientific-calculator button {
+        width: 27.5px;
+        font-size: 12px;
+        padding: 0;
+    }
+}

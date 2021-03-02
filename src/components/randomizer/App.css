@@ -1,0 +1,322 @@
+.randomizer {
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+/* Navbar randomizer */
+.randomizer-nav {
+    background: #52616b;
+    color: #f0f5f9;
+    padding: 13px;
+    margin: 0px 20px 0px 0px;
+    cursor: pointer;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+
+.randomizer-navbar {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-link {
+    padding: 0px;
+    margin: 0px
+}
+
+.result-item-nav {
+    margin: 30px 50px;
+}
+
+.active {
+    padding: 13px;
+    margin: 0px 20px 0px 0px;
+    cursor: pointer;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+    background: #c9d6df;
+    color: #52616b;
+}
+
+/* Body of randomizer */
+.randomizer-body {
+    background: #c9d6df;
+    margin: 0px 0px 0px 0px;
+    width: 1100px;
+    height: auto;
+    top: 332px;
+
+}
+
+/* Items and Result Field */
+.item-body {
+    width: 450px;
+    height: 370px;
+    background: #f0f5f9;
+    border: 2px solid #52616b;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.result-body-teamgen,
+.result-body {
+    width: 450px;
+    height: 376px;
+    background: #f0f5f9;
+    color: #52616b;
+    border: 2px solid #52616b;
+    padding: 100px 0;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.result-body-teamgen {
+    padding: 10px 0px;
+    font-size: 20px;
+    text-align: start;
+}
+
+
+
+/* Button submit */
+.submit {
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.body-sumbit {
+    margin: 50px;
+}
+
+/* Input quantity */
+.input-qty {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: #f0f5f9;
+    border: 2px solid #52616b;
+    box-sizing: border-box;
+    border-radius: 30px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: #52616b;
+}
+
+.txt-group {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #52616b;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .result-body-teamgen,
+    .result-body,
+    .item-body {
+        max-width: 330px;
+    }
+
+    .randomizer-body {
+        max-width: 870px;
+    }
+
+    .active,
+    .randomizer-nav {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .result-body-teamgen,
+    .result-body,
+    .item-body {
+        max-width: 295px;
+        max-height: 300px;
+    }
+
+    .randomizer-body {
+        max-width: 750px;
+        max-height: 430px;
+    }
+
+    .active,
+    .randomizer-nav {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .nav-link {
+        padding: 0px;
+        margin-left: 60px;
+    }
+
+    .result-item-nav {
+        margin: 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+
+    .result-body-teamgen,
+    .result-body,
+    .item-body {
+        max-width: 285px;
+        max-height: 300px;
+
+    }
+
+    .randomizer-body {
+        max-width: 670px;
+        max-height: 430px;
+    }
+
+    .active,
+    .randomizer-nav {
+        font-size: 11px;
+        margin: 0px 12px 0px 0px;
+    }
+
+    .result-item-nav {
+        margin: 10px 20px 20px 30px;
+    }
+
+    .randomizer {
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 786px) {
+
+    .result-body-teamgen,
+    .result-body,
+    .item-body {
+        max-width: 370px;
+        max-height: 300px;
+    }
+
+    .randomizer-body {
+        max-width: 600px;
+        max-height: 1000px;
+    }
+
+    .active,
+    .randomizer-nav {
+        font-size: 10px;
+        padding: 7px
+    }
+
+    .body-sumbit {
+        margin: 30px 200px
+    }
+
+    .result-item-nav {
+        margin: 30px 110px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .result-body-teamgen,
+    .result-body,
+    .item-body {
+        max-width: 370px;
+        max-height: 300px;
+    }
+
+    .randomizer-body {
+        max-width: 470px;
+        max-height: 1000px;
+    }
+
+    .body-sumbit {
+        margin: 30px 135px
+    }
+
+    .active,
+    .randomizer-nav {
+        font-size: 8px;
+        padding: 7px
+    }
+
+    .result-item-nav {
+        margin: 30px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .result-body-teamgen,
+    .result-body,
+    .item-body {
+        max-width: 250px;
+        max-height: 183px;
+    }
+
+    .randomizer-body {
+        max-width: 300px;
+        max-height: 800px;
+    }
+
+    .randomizer-navbar {
+        max-width: 280px;
+    }
+
+    .active,
+    .randomizer-nav {
+        font-size: 7px;
+        padding: 3px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    .body-sumbit {
+        margin: 20px 90px;
+    }
+
+    .submit {
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
+        margin-left: 5px;
+    }
+
+    .input-qty {
+        margin-bottom: 5px;
+        margin-left: -20px;
+    }
+
+    .result-item-nav {
+        margin: 20px 30px;
+    }
+
+    .randomizer-dev {
+        max-width: 380px;
+        max-height: 1200px;
+    }
+
+    .randomizer {
+        margin-top: 80px;
+        margin-left: 50px;
+    }
+}

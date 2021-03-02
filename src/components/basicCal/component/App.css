@@ -1,0 +1,150 @@
+#basicCal {
+    width: 1440px;
+    height: 1000px;
+}
+
+.component-app {
+    width: 400px;
+    margin-left: 3%;
+    margin-top: 286px;
+    border-radius: 10px;
+    background: #C9D6DF;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 8px 6px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.component-button {
+    display: inline-flex;
+    width: 25%;
+    height: 80px;
+    flex: 1 0 auto;
+}
+
+.component-button.wide {
+    width: 50%;
+}
+
+.component-button button {
+    background-color: #52616B;
+    border: 0;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 1px 0 0;
+    flex: 1 0 auto;
+    padding: 0;
+    color: white;
+}
+
+.component-button button:hover {
+    background-color: #F0F5F9;
+    color: #52616B;
+}
+
+.component-button:last-child button {
+    margin-right: 0;
+}
+
+.component-button.orange button {
+    background: #BB4444;
+    color: white;
+}
+
+.component-button.bbb button {
+    background: #C9D6DF;
+    color: #52616B;
+
+}
+
+.component-button-panel {
+    background-color: #858694;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+}
+
+.component-button-panel>div {
+    width: 100%;
+    margin-bottom: 1px;
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.component-display {
+    background-color: #C9D6DF;
+    text-align: right;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 300;
+    color: #52616B;
+
+}
+
+.result {
+    font-size: 72px;
+    padding: 1rem 0.7rem 0.5rem 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 411px) {
+    .component-app {
+        margin-left: 5%;
+        width: 260px;
+        margin-top: 260px;
+        height: 376px;
+    }
+
+    .component-button {
+        display: inline-flex;
+        width: 64px;
+        height: 50px;
+        flex: 1 0 auto;
+    }
+
+    .component-button.wide {
+        width: 50%;
+    }
+
+    .component-button button {
+        font-weight: 500;
+        font-size: 18px;
+
+    }
+
+    .result {
+        font-size: 48px;
+        padding: 0.15rem 0.3rem 0.0rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .component-app {
+        margin-left: 10%;
+        width: 30%;
+        height: 614px;
+    }
+
+}
+
+@media only screen and (min-width: 720px) {
+    .component-app {
+        margin-left: 20%;
+        width: 30%;
+        height: 614px;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .component-app {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: 614px;
+
+    }
+}

@@ -1,0 +1,503 @@
+body {
+    font-family: sans-serif;
+    position: relative;
+    background: #f0f5f9;
+}
+
+#unit-converter .tabs {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 800px;
+    padding: 30px 45px;
+    border: 1px solid #c9d6df;
+    background-color: #c9d6df;
+    box-shadow: 0px 4px 8px 0px #bcbcbc;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+#unit-converter .tab-list {
+    display: flex;
+    width: 800px;
+    margin: 120px auto 0;
+}
+
+#unit-converter .tab-list button {
+    font-weight: bold !important;
+}
+
+#unit-converter .tab {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 16px;
+    color: #f0f5f9;
+    background-color: #52616b;
+    border: 1px solid #52616b;
+    box-shadow: 0px 2px 16px 2px #bcbcbc;
+    margin-right: 20px;
+    transition: color 0.16s ease-in-out, background-color 0.16s ease-in-out,
+        border-color 0.16s ease-in-out;
+}
+
+#unit-converter .tab:focus-visible {
+    box-shadow: 0 0 0 4px rgba(73, 39, 150, 0.5);
+}
+
+#unit-converter .tab:focus {
+    outline: none;
+}
+
+#unit-converter .tab:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+#unit-converter .tab.active {
+    background-color: #c9d6df;
+    border-color: #c9d6df;
+    color: #52616b;
+    cursor: default;
+}
+
+#unit-converter .panel-list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#unit-converter .panel {
+    position: absolute;
+}
+
+#unit-converter .panel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#unit-converter .panel-style {
+    font-weight: 600;
+    color: #52616b;
+}
+
+#unit-converter .input-style {
+    padding-left: 10px;
+    width: 330px;
+    height: 45px;
+    border: 2px solid #52616b;
+    border-radius: 8px;
+    background-color: #f0f5f9;
+}
+
+#unit-converter .input-style:focus {
+    outline: none;
+}
+
+#unit-converter .display-style {
+    position: relative;
+    padding-left: 10px;
+    width: 330px;
+    height: 45px;
+    border: 2px solid #52616b;
+    border-radius: 8px;
+    background-color: #f0f5f9;
+}
+
+#unit-converter .display-style p {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+}
+
+#unit-converter .list-container {
+    margin-top: 30px;
+}
+
+#unit-converter .list-style {
+    padding: 10px;
+    font-size: large;
+    font-weight: 400;
+    color: #52616b;
+    padding: 12px;
+    width: 330px;
+    height: 270px;
+    border: 2px solid #52616b;
+    border-radius: 8px;
+    background-color: #f0f5f9;
+}
+
+#unit-converter .list-style:focus {
+    outline: none;
+}
+
+#unit-converter .unit-converter option {
+    margin-bottom: 5px;
+}
+
+#unit-converter .submit-button {
+    font-weight: 600;
+    border: 2.2px solid var(--primaryColor);
+    border-radius: 20px;
+    height: 45px;
+    width: 150px;
+    color: #f0f5f9;
+    background-color: #52616b;
+    margin-bottom: 70px;
+}
+
+#unit-converter .submit-button:hover {
+    background-color: #f0f5f9;
+    color: #52616b;
+}
+
+@media only screen and (max-width: 900px) {
+    #unit-converter .tabs {
+        width: 700px;
+    }
+
+    #unit-converter .tab {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+    #unit-converter .tab-list {
+        width: 700px;
+    }
+
+    #unit-converter .input-style {
+        width: 280px;
+    }
+
+    #unit-converter .display-style {
+        width: 280px;
+    }
+
+    #unit-converter .list-style {
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #unit-converter .tabs {
+        width: 650px;
+        padding: 30px 40px;
+    }
+
+    #unit-converter .tab {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    #unit-converter .tab-list {
+        width: 650px;
+    }
+
+    #unit-converter .input-style {
+        width: 260px;
+    }
+
+    #unit-converter .display-style {
+        width: 260px;
+    }
+
+    #unit-converter .list-style {
+        width: 260px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #unit-converter .tabs {
+        width: 600px;
+        padding: 30px 35px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+    }
+
+    #unit-converter .tab-list {
+        width: 600px;
+    }
+
+    #unit-converter .input-style {
+        width: 240px;
+    }
+
+    #unit-converter .display-style {
+        width: 240px;
+    }
+
+    #unit-converter .list-style {
+        width: 240px;
+        font-size: 17px;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #unit-converter .panel-container {
+        flex-direction: column;
+    }
+
+    #unit-converter .tabs {
+        width: 500px;
+        height: 900px;
+        padding: 30px 35px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+        margin-right: 15px;
+    }
+
+    #unit-converter .tab-list {
+        width: 500px;
+        overflow: auto;
+    }
+
+    #unit-converter .input-style,
+    #unit-converter .display-style {
+        width: 100%;
+    }
+
+    #unit-converter .list-style {
+        width: 100%;
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+
+    #unit-converter .unit-from {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    #unit-converter .panel-container {
+        flex-direction: column;
+    }
+
+    #unit-converter .tabs {
+        width: 450px;
+        height: 900px;
+        padding: 30px 35px;
+        margin-bottom: 40px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+        margin-right: 15px;
+    }
+
+    #unit-converter .tab-list {
+        width: 450px;
+        overflow: auto;
+    }
+
+    #unit-converter .input-style,
+    #unit-converter .display-style {
+        width: 100%;
+    }
+
+    #unit-converter .list-style {
+        width: 100%;
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+
+    #unit-converter .unit-from {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #unit-converter .panel-container {
+        flex-direction: column;
+    }
+
+    #unit-converter .tabs {
+        width: 400px;
+        height: 900px;
+        padding: 30px 35px;
+        margin-bottom: 40px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+        margin-right: 15px;
+    }
+
+    #unit-converter .tab-list {
+        width: 400px;
+        overflow: auto;
+    }
+
+    #unit-converter .input-style,
+    #unit-converter .display-style {
+        width: 100%;
+    }
+
+    #unit-converter .list-style {
+        width: 100%;
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+
+    #unit-converter .unit-from {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #unit-converter .panel-container {
+        flex-direction: column;
+    }
+
+    #unit-converter .tabs {
+        width: 350px;
+        height: 900px;
+        padding: 30px 35px;
+        margin-bottom: 40px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+        margin-right: 15px;
+    }
+
+    #unit-converter .tab-list {
+        width: 350px;
+        overflow: auto;
+    }
+
+    #unit-converter .input-style,
+    #unit-converter .display-style {
+        width: 100%;
+    }
+
+    #unit-converter .list-style {
+        width: 100%;
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+
+    #unit-converter .unit-from {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #unit-converter .panel-container {
+        flex-direction: column;
+    }
+
+    #unit-converter .tabs {
+        width: 320px;
+        height: 900px;
+        padding: 30px 35px;
+        margin-bottom: 40px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+        margin-right: 15px;
+    }
+
+    #unit-converter .tab-list {
+        width: 320px;
+        overflow: auto;
+    }
+
+    #unit-converter .input-style,
+    #unit-converter .display-style {
+        width: 100%;
+    }
+
+    #unit-converter .list-style {
+        width: 100%;
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+
+    #unit-converter .unit-from {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #unit-converter .panel-container {
+        flex-direction: column;
+    }
+
+    #unit-converter .tabs {
+        width: 300px;
+        height: 900px;
+        padding: 30px 35px;
+        margin-bottom: 40px;
+    }
+
+    #unit-converter .tab {
+        font-size: 13px;
+        padding: 10px 10px;
+        margin-right: 15px;
+    }
+
+    #unit-converter .tab-list {
+        width: 300px;
+        overflow: auto;
+    }
+
+    #unit-converter .input-style,
+    #unit-converter .display-style {
+        width: 100%;
+    }
+
+    #unit-converter .list-style {
+        width: 100%;
+        font-size: 17px;
+        overflow: auto;
+    }
+
+    #unit-converter .panel-style {
+        font-size: 14px;
+    }
+
+    #unit-converter .unit-from {
+        margin-bottom: 20px;
+    }
+}
