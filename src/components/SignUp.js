@@ -27,8 +27,12 @@ const SignUp = (props) => {
             }
         ).catch(
             err => {
-                alert(err.response.data.errors.email.join(', '))
+                console.log(err)
             }
+            
+            // err => {
+            //     alert(err.response.data.errors.email.join(', '))
+            // }
         )
     }
 

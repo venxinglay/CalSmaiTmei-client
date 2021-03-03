@@ -1,6 +1,4 @@
-let apiDomain = "http://server.test/api/";;
-
-
+let apiDomain = "https://venxing.me/app/api/";;
 
 class UrlService {
   static loginUrl() {
@@ -33,27 +31,7 @@ class UrlService {
   static ExportUrl() {
     return apiDomain + 'export';
   }
-  // static saveUserProfileUrl() {
-  //   return apiDomain + "api/user";
-  // }
-  // static getCurrentUserAcitiviesUrl() {
-  //   return apiDomain + "api/activities";
-  // }
-  // static getTodoUrl() {
-  //   return apiDomain + "api/todos";
-  // }
-  // static markTodoCompleteUrl(id) {
-  //   return apiDomain + "api/todo/complete/" + id;
-  // }
-  // static changeTodoOrderUrl() {
-  //   return apiDomain + "api/todo/reorder";
-  // }
-  // static saveTodoUrl() {
-  //   return apiDomain + "api/todo/save";
-  // }
-  // static removeTodoUrl() {
-  //   return apiDomain + "api/todo/remove";
-  // }
+
 }
 
 export default UrlService;
