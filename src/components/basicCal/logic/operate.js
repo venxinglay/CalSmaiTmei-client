@@ -21,7 +21,7 @@ export default function operate(numberOne, numberTwo, operation) {
       
       return "error";
     } else {
-      temp = one.div(two).toFixed(3);
+      temp = one.div(two);
       return temp.toString();
     }
   }

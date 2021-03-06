@@ -1,5 +1,11 @@
-let apiDomain = "https://venxing.me/app/api/";;
 
+// if (process.env.NODE_ENV === "production") {
+//   apiDomain = "https://calsmaitmei-server.venxing.me/api/";
+// } else {
+//   apiDomain = "http://calsmaitmei-app.test/api/";
+// }
+
+let apiDomain = "https://calsmaitmei-server.venxing.me/api/";
 class UrlService {
   static loginUrl() {
     return apiDomain + "login";

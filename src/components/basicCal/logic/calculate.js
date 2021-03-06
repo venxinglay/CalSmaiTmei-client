@@ -85,7 +85,8 @@ export default function calculate(obj, buttonName) {
 
     return {
 
-      total: obj.memory
+      // total: obj.memory
+      next: obj.memory
     };
   }
   if (buttonName === 'm-') {
