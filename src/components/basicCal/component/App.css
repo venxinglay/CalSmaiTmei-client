@@ -6,9 +6,9 @@
 .component-app {
     width: 400px;
     margin-left: 3%;
-    margin-top: 286px;
+    margin-top: 100px;
     border-radius: 10px;
-    background: #C9D6DF;
+    background: #c9d6df;
     border: 1px solid #000000;
     box-shadow: 2px 2px 8px 6px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .component-button button {
-    background-color: #52616B;
+    background-color: #52616b;
     border: 0;
     font-family: Helvetica Neue;
     font-style: normal;
@@ -39,8 +39,8 @@
 }
 
 .component-button button:hover {
-    background-color: #F0F5F9;
-    color: #52616B;
+    background-color: #f0f5f9;
+    color: #52616b;
 }
 
 .component-button:last-child button {
@@ -48,14 +48,13 @@
 }
 
 .component-button.orange button {
-    background: #BB4444;
+    background: #bb4444;
     color: white;
 }
 
 .component-button.bbb button {
-    background: #C9D6DF;
-    color: #52616B;
-
+    background: #c9d6df;
+    color: #52616b;
 }
 
 .component-button-panel {
@@ -66,7 +65,7 @@
     flex: 1 0 auto;
 }
 
-.component-button-panel>div {
+.component-button-panel > div {
     width: 100%;
     margin-bottom: 1px;
     flex: 1 0 auto;
@@ -74,14 +73,13 @@
 }
 
 .component-display {
-    background-color: #C9D6DF;
+    background-color: #c9d6df;
     text-align: right;
 
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: 300;
-    color: #52616B;
-
+    color: #52616b;
 }
 
 .result {
@@ -89,13 +87,11 @@
     padding: 1rem 0.7rem 0.5rem 0.5rem;
 }
 
-
-
 @media only screen and (max-width: 411px) {
     .component-app {
         margin-left: 5%;
         width: 260px;
-        margin-top: 260px;
+        margin-top: 100px;
         height: 376px;
     }
 
@@ -113,12 +109,11 @@
     .component-button button {
         font-weight: 500;
         font-size: 18px;
-
     }
 
     .result {
         font-size: 48px;
-        padding: 0.15rem 0.3rem 0.0rem;
+        padding: 0.15rem 0.3rem 0rem;
     }
 }
 
@@ -128,7 +123,6 @@
         width: 30%;
         height: 614px;
     }
-
 }
 
 @media only screen and (min-width: 720px) {
@@ -145,6 +139,5 @@
         margin-right: auto;
         width: 30%;
         height: 614px;
-
     }
 }

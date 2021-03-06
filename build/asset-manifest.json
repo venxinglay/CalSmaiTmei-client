@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CAL_SMAi-TMEi/static/css/main.d03cf641.chunk.css",
+    "main.js": "/CAL_SMAi-TMEi/static/js/main.75e00f8e.chunk.js",
+    "main.js.map": "/CAL_SMAi-TMEi/static/js/main.75e00f8e.chunk.js.map",
+    "runtime-main.js": "/CAL_SMAi-TMEi/static/js/runtime-main.11278f80.js",
+    "runtime-main.js.map": "/CAL_SMAi-TMEi/static/js/runtime-main.11278f80.js.map",
+    "static/js/2.f8631800.chunk.js": "/CAL_SMAi-TMEi/static/js/2.f8631800.chunk.js",
+    "static/js/2.f8631800.chunk.js.map": "/CAL_SMAi-TMEi/static/js/2.f8631800.chunk.js.map",
+    "static/js/3.013930fe.chunk.js": "/CAL_SMAi-TMEi/static/js/3.013930fe.chunk.js",
+    "static/js/3.013930fe.chunk.js.map": "/CAL_SMAi-TMEi/static/js/3.013930fe.chunk.js.map",
+    "index.html": "/CAL_SMAi-TMEi/index.html",
+    "static/css/main.d03cf641.chunk.css.map": "/CAL_SMAi-TMEi/static/css/main.d03cf641.chunk.css.map",
+    "static/js/2.f8631800.chunk.js.LICENSE.txt": "/CAL_SMAi-TMEi/static/js/2.f8631800.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11278f80.js",
+    "static/js/2.f8631800.chunk.js",
+    "static/css/main.d03cf641.chunk.css",
+    "static/js/main.75e00f8e.chunk.js"
+  ]
+}
