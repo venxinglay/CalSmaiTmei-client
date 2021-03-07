@@ -5,7 +5,8 @@
 //   apiDomain = "http://calsmaitmei-app.test/api/";
 // }
 
-let apiDomain = "https://calsmaitmei-server.venxing.me/api/";
+// let apiDomain = "https://calsmaitmei-server.venxing.me/api/";
+ let apiDomain = "http://calsmaitmei-app.test/api/";
 class UrlService {
   static loginUrl() {
     return apiDomain + "login";

@@ -10,10 +10,10 @@ export default class Body extends React.Component {
             qty: React.createRef(),
             data: "",
         };
+        
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
-
     handleSubmit(event) {
         event.preventDefault();
         const a = this.state.data;
@@ -32,10 +32,11 @@ export default class Body extends React.Component {
         }
 
     }
+    
     handleChange(event) {
         this.setState({ data: event.target.value });
-
     }
+
     render() {
         let shows;
         let teamGen;
@@ -85,7 +86,6 @@ export default class Body extends React.Component {
                             className='item-body'
                             value={this.state.data}
                             onChange={this.handleChange}
-                        // ref={this.state.data}
                         />
                     </Form.Group>
                     <Form.Group className='result-item-nav'>
@@ -95,7 +95,6 @@ export default class Body extends React.Component {
                             : this.props.customListItem
                                 ? customList
                                 : picker}
-                        {/*<Form.Control readOnly rows={15} value={this.props.getResult}></Form.Control>*/}
                     </Form.Group>
                 </Row>
                 <Row className='justify-content-md-center body-sumbit'>

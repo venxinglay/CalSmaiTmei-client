@@ -47,7 +47,7 @@ export default class Main extends React.Component {
                     <Route path={'/signup'} component={() => <SignUp setUser={this.setUser} />} />
                     <Route path={'/password/forgot'} component={ConfirmEmail} />
                     <Route path={'/password/reset/:token'} component={ConfirmPassword} />
-                    <Route path={'/randomizer/information'} component={InformationRandomizer} />
+                    <Route path={'/randomizer-information'} component={InformationRandomizer} />
                     {this.state.ready && <Route path={'/randomizer'} component={() => <Randomizer user={this.state.user} setUser={this.setUser} />} />}
                     <Route path='/ScientificCalculator' component={ScientificCalculator} />
                     <Route path='/UnitConverter' component={UnitConverter} />
