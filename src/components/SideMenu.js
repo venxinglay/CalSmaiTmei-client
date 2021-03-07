@@ -26,7 +26,7 @@ export const SideMenu = [
   },
   {
     title: 'Randomizer Information',
-    path: '/randomizer/information',
+    path: '/randomizer-information',
     cName: 'nav-text'
   },
 ];

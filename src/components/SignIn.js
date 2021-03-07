@@ -21,11 +21,11 @@ const SignIn = (props) => {
     });
 
     //Handle Login
-    async function onSubmit(data) {
+    const onSubmit = (data) => {
         axios.post(UrlService.loginUrl(), data).then(
             res => {
                 if (res.data.user) {
-                    localStorage.setItem('access_token', res.data.access_token);
+                    sessionStorage.setItem('access_token', res.data.access_token);
                     props.setUser(res.data.user);
                     history.push('/randomizer')
                 }

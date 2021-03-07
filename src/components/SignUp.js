@@ -19,7 +19,7 @@ const SignUp = (props) => {
         axios.post(UrlService.registerUrl(), data).then(
             res => {
                 if (res.data.user) {
-                    localStorage.setItem('access_token', res.data.access_token);
+                    sessionStorage.setItem('access_token', res.data.access_token);
                     props.setUser(res.data.user);
                     history.push('/randomizer')
                 }

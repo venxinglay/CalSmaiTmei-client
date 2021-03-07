@@ -14,7 +14,7 @@ function Header(props) {
     const showSideMenu = () => setSideMenu(!sideMenu);
 
     const handleLogout = () => {
-        localStorage.clear();
+        sessionStorage.removeItem('access_token');
         props.setUser(null);
         history.push('/signIn');
     };
