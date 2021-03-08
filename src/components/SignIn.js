@@ -21,14 +21,15 @@ const SignIn = (props) => {
     });
 
     //Handle Login
-    const onSubmit = async (data) => {
-        await axios.post(UrlService.loginUrl(), data).then(
+    const onSubmit = async(data) => {
+        axios.post(UrlService.loginUrl(), data).then(
             res => {
-                if (res.data.user) {
+
                     sessionStorage.setItem('access_token', res.data.access_token);
+                    if(res.data.user){
                     props.setUser(res.data.user);
                     history.push('/randomizer')
-                }
+                    }
 
             }
         ).catch(
