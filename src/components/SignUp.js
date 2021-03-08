@@ -14,15 +14,13 @@ const SignUp = (props) => {
     });
 
     const history = useHistory();
-    const onSubmit = (data) => {
+    const onSubmit = async (data) => {
 
-        axios.post(UrlService.registerUrl(), data).then(
+        await axios.post(UrlService.registerUrl(), data).then(
             res => {
-                if (res.data.user) {
                     sessionStorage.setItem('access_token', res.data.access_token);
                     props.setUser(res.data.user);
                     history.push('/randomizer')
-                }
 
             }
         ).catch(
