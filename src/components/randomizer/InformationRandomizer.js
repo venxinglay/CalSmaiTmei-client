@@ -72,23 +72,13 @@ export default function InteractiveList() {
                                         <TableCell align='right'>
                                             {item.data.result.join(' | ')}
                                         </TableCell>
-                                        {/*<TableCell align="right">
-                                            <Button
-                                                variant="contained"
-                                                color="secondary"
-                                                onClick={handleDelete(item.id)}
-                                                startIcon={<DeleteIcon />}
-                                            >
-                                            </Button>
-                                        </TableCell>
-                                        */}
                                     </TableRow>
                                 ))}
                             </TableBody>
                         </Table>
                     </Grid>
                 </Grid>
-                <Grid style={{ margin: '30px' }}>
+                <Grid style={{ margin: '30px' }} item sm={4} >
                     <Button
                         variant='contained'
                         className='bg-secondary text-light'

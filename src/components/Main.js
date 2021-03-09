@@ -13,17 +13,21 @@ import InformationRandomizer from './randomizer/InformationRandomizer';
 import ScientificCalculator from './ScientificCalculator';
 import UnitConverter from './UnitConverter';
 
+axios.defaults.headers.common['Authorization'] = 'Bearer ' + sessionStorage.getItem('access_token')
+
 export default class Main extends React.Component {
     state = { ready: false };
 
     componentDidMount = () => {
+
+
         axios.get(UrlService.currentUserProfileUrl()).then(
             res => {
                 this.setUser(res.data)
             }
         ).catch(
             err => {
-                console.log(err)
+                
             }
         ).finally(() => {
             this.setState({ ready: true })

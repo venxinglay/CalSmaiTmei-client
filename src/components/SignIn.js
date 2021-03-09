@@ -3,7 +3,7 @@ import { Container, Col, Row, Form, Button } from 'react-bootstrap';
 import { BsFillEnvelopeFill, BsLockFill } from 'react-icons/bs';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import UrlService from './services/UrlService'
 import axios from "axios"
@@ -20,17 +20,12 @@ const SignIn = (props) => {
         criteriaMode: 'all',
     });
 
-    //Handle Login
-    const onSubmit = async(data) => {
+    const  onSubmit = (data) => {
         axios.post(UrlService.loginUrl(), data).then(
             res => {
-
                     sessionStorage.setItem('access_token', res.data.access_token);
-                    if(res.data.user){
                     props.setUser(res.data.user);
-                    history.push('/randomizer')
-                    }
-
+                    history.push('/randomizer');
             }
         ).catch(
             err => {
