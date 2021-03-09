@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios'
+import UrlService from './components/services/UrlService.js'
 
-// axios.defaults.headers.common['Authorization'] = 'Bearer ' + sessionStorage.getItem('access_token')
+
+UrlService.setToken(localStorage.getItem('access_token'))
 
 ReactDOM.render(
   <React.StrictMode>

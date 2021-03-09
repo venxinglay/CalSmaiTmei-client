@@ -5,9 +5,16 @@
 //   apiDomain = "http://calsmaitmei-app.test/api/";
 // }
 
+import axios from 'axios'
+
 let apiDomain = "https://calsmaitmei-server.venxing.me/api/";
 
 class UrlService {
+  static setToken(token) {
+    if (!token) return
+    localStorage.setItem('access_token', token);
+    axios.defaults.headers.common['Authorization'] = 'Bearer ' + token
+  }
   static loginUrl() {
     return apiDomain + "login";
   }

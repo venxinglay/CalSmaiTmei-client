@@ -20,10 +20,10 @@ const SignIn = (props) => {
         criteriaMode: 'all',
     });
 
-    const  onSubmit = (data) => {
+    const onSubmit = (data) => {
         axios.post(UrlService.loginUrl(), data).then(
             res => {
-                    sessionStorage.setItem('access_token', res.data.access_token);
+                    UrlService.setToken(res.data.access_token);
                     props.setUser(res.data.user);
                     history.push('/randomizer');
             }
